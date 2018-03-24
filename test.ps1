@@ -13,7 +13,7 @@
 #######
 $width = 20
 $height = 5 * 9
-width * height
+$width * $height
 
 
 $s= "`"Yes,`" he said."
