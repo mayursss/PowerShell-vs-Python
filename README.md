@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+Hello Friends, Today I will go through python v3.6.4 documentation and will compare commands given in tutorial section PowerShell commands
 
-You can use the [editor on GitHub](https://github.com/mayursss/PowerShell-vs-Python/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+so lests start with section 3.1. Using Python as a Calculator
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+**Python**
+```python
+>>> 2 + 2
+4
+>>> 50 - 5*6
+20
+>>> (50 - 5*6) / 4
+5.0
+>>> 8 / 5  # division always returns a floating point number
+1.6
 ```
+**PowerShell**
+```powershell
+PS>2 + 2
+4
+PS>50 - 5*6
+20
+PS>(50 - 5*6) / 4
+5
+PS>8 / 5
+1.6
+PS>
+```
+Ok so this will be almost same in Powershell with only difference for expression `(50 - 5*6) / 4` here the output will be 5 compared to 5.0 in Python
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+The integer numbers e.g. `(2, 4, 20)` have type `int`, the ones with a fractional part e.g. `(5.0, 1.6)` have type `float`. Division `/` always returns a float.
+To do floor division and get an integer result (discarding any fractional result) you can use the `//` operator.
+To calculate the remainder you can use `%`
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mayursss/PowerShell-vs-Python/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**Python**
+```python
+>>> 17 / 3    # classic division returns a float
+5.666666666666667
+>>> 17 // 3   # floor division discards the fractional part
+5
+>>> 17 % 3    # the % operator returns the remainder of the division
+2
+>>> 5 * 3 + 2 # result * divisor + remainder
+17
+```
+**PowerShell**
+```powershell
+PS>17 /3
+5.66666666666667
+PS>[math]::Floor(17/3)
+5
+PS>17 % 3
+2
+PS>5 * 3 + 2
+```
