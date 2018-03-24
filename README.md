@@ -53,4 +53,4 @@ PS>5 * 3 + 2
 PS>[math]::Floor(17/3)
 5
 ```
-So you might have noticed that only difference here is calculating floor value. PowerShell is using **.Net `[math]` class** and Python is just using `//` operator so we can say python is bit easy here but **.Net `[math]` class** has many more options which we will see later.
+So you might have noticed that only difference here is calculating floor value. PowerShell is using .Net `[math]` class and Python is just using `//` operator so we can say python is bit easy here but .Net `[math]` class has many more options which we will see later.
