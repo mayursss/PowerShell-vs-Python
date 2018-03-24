@@ -35,20 +35,22 @@ To calculate the remainder you can use `%`
 ```python
 >>> 17 / 3    # classic division returns a float
 5.666666666666667
->>> 17 // 3   # floor division discards the fractional part
-5
 >>> 17 % 3    # the % operator returns the remainder of the division
 2
 >>> 5 * 3 + 2 # result * divisor + remainder
 17
+>>> 17 // 3   # floor division discards the fractional part
+5
 ```
 **PowerShell**
 ```powershell
 PS>17 /3
 5.66666666666667
-PS>[math]::Floor(17/3)
-5
 PS>17 % 3
 2
 PS>5 * 3 + 2
+17
+PS>[math]::Floor(17/3)
+5
 ```
+So you might have noticed that only difference here is calculating floor value. PowerShell is using _.Net_ `[math]` _class_ and Python is just using `//` operator so we can say python is bit easy here but _.Net_ `[math]` _class_ has many more options which we will see later.
