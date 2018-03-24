@@ -54,3 +54,39 @@ PS>[math]::Floor(17/3)
 5
 ```
 So you might have noticed that only difference here is calculating floor value. PowerShell is using .Net `[math]` class and Python is just using `//` operator so we can say python is bit easy here but .Net `[math]` class has many more options which we will see later.
+
+With Python, it is possible to use the `**` operator to calculate powers 
+**Python**
+``` Python
+>>> 5 ** 2  # 5 squared
+25
+>>> 2 ** 7  # 2 to the power of 7
+128
+```
+**PowerShell**
+``` PowerShell
+PS>[math]::Pow(5,2)
+25
+PS>[math]::Pow(2,7)
+128
+```
+As you have already noticed we are using operator `**` in Python and .Net `[math]` class in powershell to calculate power.
+
+The equal sign `=` is used to assign a value to a variable. Afterwards, no result is displayed before the next interactive prompt
+
+``` python
+>>> width = 20
+>>> height = 5 * 9
+>>> width * height
+900
+```
+``` PowerShell
+PS>$width = 20
+PS>$height = 5 * 9
+PS>$width * $height
+900
+```
+In both Powershell and Python `=` is used to assign value to variable. Difference here is that in PowerShell variable starts with `$` sign.
+
+In Python there is full support for floating point; operators with mixed type operands convert the integer operand to floating point
+

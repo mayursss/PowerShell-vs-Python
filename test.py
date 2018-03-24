@@ -2,11 +2,19 @@
 50 - 5*6
 (50 - 5*6) / 4
 8 / 5
-##########
+#######
 17 / 3  # classic division returns a float
-17 // 3  # floor division discards the fractional part
 17 % 3  # the % operator returns the remainder of the division
 5 * 3 + 2  # result * divisor + remainder
+17 // 3  # floor division discards the fractional part
+#######
+5 ** 2
+2 ** 7
+#######
+width = 20
+height = 5 * 9
+width * height
+
 
 s= "\"Yes,\" he said."
 print(s)

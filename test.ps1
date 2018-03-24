@@ -1,14 +1,19 @@
 2 + 2
 50 - 5*6
-$a = (50 - 5*6) / 4
-$a.GetType().BaseType
+(50 - 5*6) / 4
 8 / 5 
 #######
 17 /3 
-[math]::Floor(17/3)
 17 % 3
 5 * 3 + 2 
-
+[math]::Floor(17/3)
+#######
+[math]::Pow(5,2)
+[math]::Pow(2,7)
+#######
+$width = 20
+$height = 5 * 9
+width * height
 
 
 $s= "`"Yes,`" he said."
